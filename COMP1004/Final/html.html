@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title></title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="C:\Users\aarju\OneDrive\Desktop\COMP1004\background1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+    <div class="content">
+        <div class="options">
+            <button id="loginOption"> Login Here</button>
+            <button id="registerOption">Register Now</button>
+        </div>
+        <form id="loginForm">
+            <div id="loginFields" style="display: none;">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p><a href="#" id="forgotPassword" class="forgot-password">Forgot Password?</a></p>
+            </div>
+        </form>
+        <form id="registerForm">
+            <div id="registerFields" style="display: none;">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <div class="background-image">
+        <div class="overlay">
+            <h2 class="overlay-title">Strength Check: -/10</h2>
+            <p class="overlay-note">Note: Include a special character, uppercase letters, numbers, and a length of 12 in the password for a more secure experience.</p>
+        </div>
+        <h2 class="page-title">Account Search Page</h2>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" id="searchButton">Search</button>
+        </div>
+        <button type="button" id="logoutButton" onclick="console.log('Logout button clicked!')">Logout</button>
+        <div id="forgotPasswordMessage" class="forgot-password-message" style="display: none;">
+            <p>Contact us: tomorrowtechwantstoknow@gmail.com for help!</p>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
